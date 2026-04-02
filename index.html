@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>12 Stone AI | Custom Bot Setup</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <header class="hero">
+    <div class="hero-inner hero-grid">
+      <div class="hero-copy">
+        <div class="badge">12 Stone AI Custom Bot Setup</div>
+
+        <h1>Build Your <span>AI Assistant</span></h1>
+
+        <p class="hero-subtext">
+          12 Stone AI builds custom brand bots that help business professionals answer questions,
+          qualify leads, and turn website traffic into real conversations.
+        </p>
+
+        <div class="hero-benefits">
+          <div class="hero-benefit">✔ Human-like conversations powered by advanced AI</div>
+          <div class="hero-benefit">✔ Capture and qualify leads automatically</div>
+          <div class="hero-benefit">✔ Route real opportunities instantly</div>
+        </div>
+
+        <div class="progress-bar-wrap">
+          <div class="progress-bar-fill" id="progressFill"></div>
+        </div>
+        <div class="progress-label" id="progressLabel">0 of 6 sections complete</div>
+      </div>
+
+      <div class="hero-preview-card">
+        <div class="preview-top">
+          <div class="preview-dot-group">
+            <span></span><span></span><span></span>
+          </div>
+          <div class="preview-title">Live AI Preview</div>
+        </div>
+
+        <div class="chat-thread">
+          <div class="chat-bubble user">
+            I’m interested in learning more about your services and how this could help my business.
+          </div>
+          <div class="chat-bubble bot">
+            Absolutely — I can help with that. Are you most interested in a website conversation bot,
+            a voice agent for incoming calls, or both?
+          </div>
+          <div class="chat-bubble bot">
+            I can also help connect you with the team for next steps once your setup is reviewed.
+          </div>
+        </div>
+
+        <div class="preview-footer">
+          Powered by 12 Stone AI
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="benefit-strip">
+    <div class="benefit-strip-inner">
+      <div class="benefit-item">
+        <strong>Website Conversations</strong>
+        <span>Engage visitors and capture more leads</span>
+      </div>
+      <div class="benefit-item">
+        <strong>Voice AI</strong>
+        <span>Handle inbound calls with human-like responses</span>
+      </div>
+      <div class="benefit-item">
+        <strong>Smart Qualification</strong>
+        <span>Gather the right details before handoff</span>
+      </div>
+      <div class="benefit-item">
+        <strong>Better Follow-Up</strong>
+        <span>Route opportunities faster and more consistently</span>
+      </div>
+    </div>
+  </section>
+
+  <main class="form-wrap">
+    <form id="intakeForm" novalidate>
+
+      <section class="section" data-section="1">
+        <div class="section-header">
+          <div class="section-icon">👤</div>
+          <div>
+            <div class="section-title">Contact & Business Details</div>
+            <div class="section-subtitle">Tell us where to send updates and how to tailor your setup</div>
+          </div>
+        </div>
+
+        <div class="field-row">
+          <div class="field-group">
+            <label>Full Name <span class="req">*</span></label>
+            <input type="text" name="fullName" placeholder="Your full name" required>
+          </div>
+          <div class="field-group">
+            <label>Phone Number</label>
+            <input type="tel" name="phone" placeholder="Best number">
+          </div>
+        </div>
+
+        <div class="field-group">
+          <label>Email Address <span class="req">*</span></label>
+          <input type="email" name="email" placeholder="Your email" required>
+        </div>
+
+        <div class="field-group">
+          <label>Website URL</label>
+          <input type="text" name="website" placeholder="https://yourwebsite.com">
+        </div>
+
+        <div class="field-group">
+          <label>Business Name</label>
+          <input type="text" name="businessName" placeholder="Your business or brand name">
+        </div>
+      </section>
+
+      <section class="section" data-section="2">
+        <div class="section-header">
+          <div class="section-icon">⚙️</div>
+          <div>
+            <div class="section-title">AI Goals & Lead Flow</div>
+            <div class="section-subtitle">Choose the AI setup and how leads should be handled</div>
+          </div>
+        </div>
+
+        <div class="field-group">
+          <label>Which AI setup are you most interested in? <span class="req">*</span></label>
+          <div class="radio-cards package-cards">
+            <input type="radio" name="botPackage" id="pkg-web" value="Website Conversation Bot" required>
+            <label for="pkg-web" class="radio-card">
+              <span class="card-emoji">💬</span>
+              Website Conversation Bot
+              <small>Engages site visitors, answers questions, captures leads, and routes prospects.</small>
+            </label>
+
+            <input type="radio" name="botPackage" id="pkg-voice" value="Voice Concierge">
+            <label for="pkg-voice" class="radio-card">
+              <span class="card-emoji">📞</span>
+              Voice Concierge
+              <small>Answers inbound calls, handles common questions, captures caller details, and notifies you when needed.</small>
+            </label>
+
+            <input type="radio" name="botPackage" id="pkg-both" value="Both Website Bot and Voice Concierge">
+            <label for="pkg-both" class="radio-card">
+              <span class="card-emoji">⚡</span>
+              Both
+              <small>A complete AI front desk setup for both website conversations and incoming calls.</small>
+            </label>
+          </div>
+        </div>
+
+        <div class="field-group">
+          <label>Main goal for the AI setup <span class="req">*</span></label>
+          <select name="primaryGoal" required>
+            <option value="">Select primary goal…</option>
+            <option>Capture and qualify leads</option>
+            <option>Answer questions and route serious prospects</option>
+            <option>Book consultations or appointments</option>
+            <option>Handle inbound calls more effectively</option>
+            <option>Improve response time and follow-up</option>
+          </select>
+        </div>
+      </section>
+
+      <section class="section" data-section="3">
+        <div class="section-header">
+          <div class="section-icon">🎙️</div>
+          <div>
+            <div class="section-title">Brand Voice & Personality</div>
+            <div class="section-subtitle">Help us make the AI sound aligned with your brand</div>
+          </div>
+        </div>
+
+        <div class="field-group">
+          <label>How would you describe your communication style? <span class="req">*</span></label>
+          <div class="radio-cards">
+            <input type="radio" name="commStyle" id="s-friendly" value="Warm and friendly" required>
+            <label for="s-friendly" class="radio-card"><span class="card-emoji">😊</span>Warm & Friendly</label>
+
+            <input type="radio" name="commStyle" id="s-professional" value="Professional and polished">
+            <label for="s-professional" class="radio-card"><span class="card-emoji">💼</span>Professional & Polished</label>
+
+            <input type="radio" name="commStyle" id="s-direct" value="Direct and efficient">
+            <label for="s-direct" class="radio-card"><span class="card-emoji">⚡</span>Direct & Efficient</label>
+
+            <input type="radio" name="commStyle" id="s-blend" value="A blend of styles">
+            <label for="s-blend" class="radio-card"><span class="card-emoji">🤝</span>Balanced Blend</label>
+          </div>
+        </div>
+
+        <div class="field-group">
+          <label>What 3 words should describe your brand?</label>
+          <input type="text" name="threeWords" placeholder="Example: professional, responsive, trustworthy">
+        </div>
+
+        <div class="field-group">
+          <label>Anything the AI should avoid saying?</label>
+          <textarea name="wordsToAvoid" placeholder="Words, phrases, tone, or claims you do not want used"></textarea>
+        </div>
+      </section>
+
+      <section class="section" data-section="4">
+        <div class="section-header">
+          <div class="section-icon">📈</div>
+          <div>
+            <div class="section-title">Business & Lead Details</div>
+            <div class="section-subtitle">Give us the information needed to structure the AI correctly</div>
+          </div>
+        </div>
+
+        <div class="field-group">
+          <label>Who are you mainly trying to attract right now?</label>
+          <textarea name="audience" placeholder="Describe your ideal customer or lead type"></textarea>
+        </div>
+
+        <div class="field-group">
+          <label>What are the top questions your clients ask most often?</label>
+          <textarea name="topQuestions" placeholder="List the common questions the AI should be ready to handle"></textarea>
+        </div>
+
+        <div class="field-group">
+          <label>Anything specific the AI should know about your services or process?</label>
+          <textarea name="businessNotes" placeholder="Share any important details that would help us build the AI properly"></textarea>
+        </div>
+      </section>
+
+      <section class="section" data-section="5">
+        <div class="section-header">
+          <div class="section-icon">🔔</div>
+          <div>
+            <div class="section-title">Routing, Notifications & Handoff</div>
+            <div class="section-subtitle">Control how AI routes leads, alerts you, and escalates conversations</div>
+          </div>
+        </div>
+
+        <div class="field-group">
+          <label>Where should lead alerts be sent?</label>
+          <div class="radio-cards">
+            <input type="radio" name="alertRoute" id="alert-text" value="Text message">
+            <label for="alert-text" class="radio-card"><span class="card-emoji">💬</span>Text Message</label>
+
+            <input type="radio" name="alertRoute" id="alert-email" value="Email">
+            <label for="alert-email" class="radio-card"><span class="card-emoji">📧</span>Email</label>
+
+            <input type="radio" name="alertRoute" id="alert-both" value="Both text and email">
+            <label for="alert-both" class="radio-card"><span class="card-emoji">⚡</span>Both</label>
+          </div>
+        </div>
+
+        <div class="field-group">
+          <label>Booking or calendar link</label>
+          <input type="text" name="calendarLink" placeholder="Paste your booking link if applicable">
+        </div>
+
+        <div class="field-group">
+          <label>What information should be included in alerts?</label>
+          <textarea name="alertDetails" placeholder="Name, phone, email, summary of conversation, lead type, next step, etc."></textarea>
+        </div>
+
+        <div class="field-group">
+          <label>When should the AI hand off to you instead of continuing?</label>
+          <textarea name="handoffTrigger" placeholder="Example: when someone asks for pricing, requests a live person, is ready to book, or asks something outside approved topics"></textarea>
+        </div>
+      </section>
+
+      <section class="section" data-section="6">
+        <div class="section-header">
+          <div class="section-icon">🛡️</div>
+          <div>
+            <div class="section-title">Messaging, Boundaries & Compliance</div>
+            <div class="section-subtitle">Define how AI should position your brand and where it should stop</div>
+          </div>
+        </div>
+
+        <div class="field-group">
+          <label>What should the AI never say?</label>
+          <textarea name="neverSay" placeholder="Anything you want the AI to avoid completely"></textarea>
+        </div>
+
+        <div class="field-group">
+          <label>Any compliance notes or special instructions?</label>
+          <textarea name="compliance" placeholder="Add any restrictions, disclaimers, or special handling instructions"></textarea>
+        </div>
+      </section>
+
+      <div class="submit-area">
+        <button type="submit" class="submit-btn" id="submitBtn">
+          <span id="btnText">Submit Setup Request</span>
+          <span id="btnSpinner" style="display:none;"><span class="spinner"></span></span>
+        </button>
+
+        <div class="submit-note">
+          Your answers go directly to our team for review.
+        </div>
+
+        <div class="next-step-box">
+          <strong>What happens next</strong>
+          <p>
+            Once submitted, we’ll review your setup request, define the right AI structure,
+            and follow up with the next step to move forward.
+          </p>
+        </div>
+      </div>
+    </form>
+
+    <div class="success-screen" id="successScreen">
+      <div class="success-icon">✓</div>
+      <h2>Your setup request has been received</h2>
+      <p>Our team will review your answers and follow up with the next step for your AI build.</p>
+    </div>
+  </main>
+
+  <footer class="footer">
+    Powered by <strong>12 Stone AI</strong> · Custom AI systems for smarter conversations, lead capture, and client follow-up
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
